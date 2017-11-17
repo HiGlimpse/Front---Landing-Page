@@ -66,17 +66,30 @@
         </div>    
 
         <div class="signupblock">
-            <p>Be the first to know about our launch</p>
             
-            <input type="text" placeholder="First Name" class="enterinfo">
-            <p></p>
-            <input type="text" placeholder="Last Name" class="enterinfo">
-            <p></p>
-            <input type="text" placeholder="Email Address" class="enterinfo"> 
-            <p></p>
+            <div class="feature=input">
+                <p>Be the first to know about our launch</p>
 
-            <input type="text" class="enteremail" placeholder="Email Address"> <button class="signup-button">Sign Up</button>   
+                <input type="text" placeholder="First Name" class="enterinfo">
+                <p></p>
+                <input type="text" placeholder="Last Name" class="enterinfo">
+                <p></p>
+
+                <input type="text" class="enterinfo error" name="EMAIL" id="subscribe-email" placeholder="Enter your email address" spellcheck="false"> 
+                <p></p>
+                <button type="submit" id="signup-button" class="signup-button">Sign Up</button> 
+                <label for="subscribe-email" class="subscribe-message error" style="">
+                <i class="fa fa-warning"></i>
+                <p></p>
+                <span class="message-content"></span>
+                </label>
+            </div>
+            
         </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script  src="subscribe.js"> </script>
             
         
     </body>
