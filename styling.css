@@ -1,0 +1,133 @@
+body{
+    font-family: lato;
+    height:100%;
+    margin:0;
+    text-align: center;
+    color:#B8977E;
+}
+
+h1{
+    text-align: center;
+    color:#B8977E;
+    font-family: comfortaa;
+    background-color: antiquewhite;
+    margin:0;
+    position:fixed;
+    width:100%;
+    padding:5px;
+    z-index: 2;
+}
+
+.topblock{
+    z-index: 3;
+    text-align: center;
+    background-image: url(Images/marvelappbench.png);
+    min-height: 80%;
+    position:relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*fixed makes the image parallax, scroll changes it to normal*/
+}
+
+.blocktext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    color:#000;
+    font-size: 300%;
+    letter-spacing: 2px;
+    font-family: comfortaa;
+}
+
+.blockborder{
+    background-color: antiquewhite;
+    color:#B8977E;
+    padding:5px;
+    border-radius: 10px;
+}
+
+.clear{
+    clear:both;
+}
+
+#introtext{
+    font-size: 200%;
+    padding:2%;
+}
+
+.gridwrapper{
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:50%;
+    background-color: #F1F1F1;
+    padding: 3% 0;
+}
+
+img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+.gridtext{
+    position: relative;
+    top: 40%;
+    font-size: 120%;
+}
+
+.missionblock{
+    padding:4%;
+    font-size: 120%;
+}
+
+.missionblock img{
+    height: 10%;
+}
+
+.enteremail {
+    font-family: 'Open Sans', sans-serif;
+    height: 55px;
+    word-spacing: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    width: 30%;
+    background-color: antiquewhite;
+    border: solid 1px rgba(255, 255, 255, 0.17);
+    color: #B8977E;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 5px;
+    outline:none;
+    box-sizing: border-box;
+}
+
+.signup-button {
+    width: 10%;
+    height: 55px;
+    /* background-color: rgba(22, 182, 234, 0.52); */
+    background-color: #131313;
+    /* background-color: #303e49; */
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    outline:none;
+    cursor: pointer;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.signupblock{
+    padding: 3%;
+    background-color: #F1F1F1;
+}
+
+.signupblock p{
+    font-size: 150%;
+}
