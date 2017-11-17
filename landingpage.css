@@ -21,7 +21,7 @@ h1{
 .topblock{
     z-index: 3;
     text-align: center;
-    background-image: url(Images/marvelappbench.png);
+    background-image: url(images/marvelappbench.png);
     min-height: 80%;
     position:relative;
     background-position: center;
