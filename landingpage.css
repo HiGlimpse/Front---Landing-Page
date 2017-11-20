@@ -18,17 +18,25 @@ h1{
     z-index: 2;
 }
 
-.topblock{
-    z-index: 3;
+.background{
     text-align: center;
-    background-image: url(images/marvelappbench.png);
-    min-height: 80%;
     position:relative;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     /*fixed makes the image parallax, scroll changes it to normal*/
+}
+.topblock{
+    background-image: url(images/marvelappbench.png);
+    min-height: 80%;
+    z-index: 3;
+}
+
+.sparkblock{
+    background-image: url(images/marvelapplights.png);
+    min-height: 50%;
+    z-index: 1;
 }
 
 .blocktext{
@@ -42,40 +50,57 @@ h1{
 }
 
 .blockborder{
+    display: inline-block;
     background-color: antiquewhite;
     color:#B8977E;
     padding:5px;
     border-radius: 10px;
 }
 
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .clear{
     clear:both;
 }
 
-#introtext{
+.bigtext{
     font-size: 200%;
     padding:2%;
 }
 
-.gridwrapper{
-    width:100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height:50%;
+.intro{
     background-color: #F1F1F1;
-    padding: 3% 0;
+    height:50%;
 }
 
-img{
-    width:100%;
-    height:100%;
-    object-fit: contain;
-}
-
-.gridtext{
+.intro img{
     position: relative;
-    top: 40%;
+    float:left;
+    height:100%;
+    max-width: 50%;
+}
+
+.introtext{
+    height:100%;
+    vertical-align: middle;
+    display: table;
+    min-width: 10%;
+}
+
+.textcell{
+    display: table-cell;
+    vertical-align: middle;
     font-size: 120%;
+    padding: 5%;
 }
 
 .missionblock{
@@ -85,6 +110,25 @@ img{
 
 .missionblock img{
     height: 10%;
+}
+
+.gridwrapper{
+    width:100%;
+    display: grid;
+    height:50%;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #F1F1F1;
+    padding: 0;
+}
+
+.gridtext{
+    font-size: 120%;
+    padding:5%;
+}
+
+.gridtext img{
+    max-width: 100%;
+    height: 150px;
 }
 
 .enterinfo {
@@ -108,9 +152,7 @@ img{
 .signup-button {
     width: 10%;
     height: 55px;
-    /* background-color: rgba(22, 182, 234, 0.52); */
     background-color: #131313;
-    /* background-color: #303e49; */
     border: none;
     font-size: 14px;
     border-radius: 5px;
