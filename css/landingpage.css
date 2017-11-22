@@ -28,13 +28,13 @@ h1{
     /*fixed makes the image parallax, scroll changes it to normal*/
 }
 .topblock{
-    background-image: url(images/marvelappbench.png);
+    background-image: url(../images/marvelappbench.png);
     min-height: 80%;
     z-index: 3;
 }
 
 .sparkblock{
-    background-image: url(images/marvelapplights.png);
+    background-image: url(../images/marvelapplights.png);
     min-height: 50%;
     z-index: 1;
 }

@@ -3,13 +3,13 @@
 <html>
 
     <head>
-        
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel=stylesheet type="text/css" href="landingpage.css">
-        
+
+        <link rel=stylesheet type="text/css" href="css/landingpage.css">
+
         <style type="text/css">
-            
+
             @import url('https://fonts.googleapis.com/css?family=Lato');
             @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
@@ -18,9 +18,9 @@
     </head>
 
     <body>
-        
+
         <h1>glimpse</h1>
-        
+
         <div class="background topblock">
             <div class="blocktext">
                 <div class="blockborder">
@@ -28,10 +28,10 @@
                 </div>
             </div>
         </div>
-        
+
         <p class="bigtext">Planning out your next date shouldn't be so <span id="typingtext">complicated</span>
         </p>
-        
+
         <div class="intro">
             <img src="images/feethanging.png">
             <div class="introtext">
@@ -40,69 +40,69 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="clear"></div>
 
-        
+
         <div class="missionblock">
- 
+
 
             <p id="mission">Our mission is to bring you a simpler and more relatable experience when planning out your next date.</p>
             <p>Whether you two are going on your first date or your hundreth date, we've got you covered.</p>
             <img src="images/coffeefortwo.png">
-            
-        </div> 
-        
+
+        </div>
+
         <div class="gridwrapper">
             <div class="gridtext">
                 <p><strong> Reviews + Recommendations</strong></p>
                 <p>Get an inside scoop on where others have enjoyed dates and recieve personalized recommendations on where you should go</p>
                 <img src="images/location.png">
             </div>
-    
+
             <div class="gridtext">
                 <p><strong>Lazy Sunday</strong></p>
                 <p>Staying in? For the times when you simply don't want to be outside, plan out a date right in your home! </p>
                 <img src="images/home.png">
             </div>
-            
+
             <div class="gridtext">
                 <p><strong>First Glimpse</strong></p>
                 <p>A collection of stories from people like you on where they went on their first date and what made it memorable</p>
                 <img src="images/benchgraphic.png">
             </div>
         </div>
-        
-        <p class="bigtext">That next special experience between you two should be right at your fingertips.</p> 
+
+        <p class="bigtext">That next special experience between you two should be right at your fingertips.</p>
         <div class="background sparkblock"></div>
-        
-        
+
+
 
         <div class="signupblock">
-            
+
             <div class="feature=input">
                 <p><strong>Coming Soon!</strong> Be the first to know about our launch</p>
 
-                <input type="text" placeholder="First Name" class="enterinfo">
+                <input type="text" placeholder="First Name" id='first-name' class="enterinfo">
                 <p></p>
-                <input type="text" placeholder="Last Name" class="enterinfo">
+                <input type="text" placeholder="Last Name" id= 'last-name' class="enterinfo">
                 <p></p>
 
-                <input type="text" class="enterinfo error" name="EMAIL" id="subscribe-email" placeholder="Enter your email address" spellcheck="false"> 
+                <input type="text" class="enterinfo error" name="EMAIL" id="subscribe-email" placeholder="Enter your email address" spellcheck="false">
                 <p></p>
-                <button type="submit" id="signup-button" class="signup-button">Sign Up</button> 
+                <button type="submit" id="signup-button" class="signup-button">Sign Up</button>
                 <label for="subscribe-email" class="subscribe-message error" style="">
                 <i class="fa fa-warning"></i>
                 <p></p>
                 <span class="message-content"></span>
                 </label>
             </div>
-            
+
         </div>
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        
-        <script  src="subscribe.js"> </script>
+
+        <script  src="js/subscribe.js"> </script>
 
     </body>
 </html>

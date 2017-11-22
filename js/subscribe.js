@@ -4,14 +4,31 @@ function validateEmail(email) {
 }
 $("#signup-button").click(function(e){
   var $email = $("#subscribe-email").val();
+  var $first = $("#first-name").val();
+  var $last = $("#last-name").val();
   if(validateEmail($email)){
-    //alert("Valid email!");
-    $(".message-content").html("Welcome! Thanks for your interest");
-  }else{
+    $.ajax({
+        url:'/subscription',
+        type:'post',
+        datatype:'jsonp',
+        data:{
+          'first':$first ,
+          'last': $last,
+          'email':$email
+        },
+        success:function(response){
+            $(".message-content").html(response.msg);
+        },
+        error: function(response){
+          $(".message-content").html(response.msg);
+        }
+    });
+  }
+  else{
     //alert("Invalid email!");
     $(".message-content").html("E-mail address is not valid.");
   }
-  
+
   $(".subscribe-message").fadeIn(1500).css("display","block").delay(2000).fadeOut(500);
   e.preventDefault();
 });
@@ -22,7 +39,7 @@ $("#signup-button").click(function(e){
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
   var dataText = [ "tedious.", "stressful.","time consuming.", "complicated."];
-  
+
   // type one text in the typwriter
   // keeps calling itself until the text is finished
   function typeWriter(text, i, fnCallback) {
