@@ -3,13 +3,13 @@
 <html>
 
     <head>
-
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        
         <link rel=stylesheet type="text/css" href="css/landingpage.css">
-
+        
         <style type="text/css">
-
+            
             @import url('https://fonts.googleapis.com/css?family=Lato');
             @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
@@ -18,90 +18,104 @@
     </head>
 
     <body>
-
-        <h1>glimpse</h1>
-
+        
+        <h1>glimpse</h1> <!-- glimpse will appear as a top fixed bar -->
+        
+        <!-- -->
         <div class="background topblock">
+            <!-- html for "glimpse" that appears on top of first background image
             <div class="blocktext">
                 <div class="blockborder">
                     glimpse
                 </div>
             </div>
+            -->
         </div>
-
-        <p class="bigtext">Planning out your next date shouldn't be so <span id="typingtext">complicated</span>
-        </p>
-
-        <div class="intro">
+        
+        <!-- Big text with 100% width and typewriter text -->
+        <div> 
+            <p class="bigtext">Planning out your next date shouldn't be so <span id="typingtext">complicated</span>
+            </p>
+        </div>
+        
+        <!-- Brief Introduction to the problem statement-->
+        <div class="intro"> 
             <img src="images/feethanging.png">
             <div class="introtext">
                 <div class="textcell">
-                        <p>We've all been there before. You and your partner have a date night  and you haven't figured out where to go.</p><p>They finally said yes but you have no idea what their ideal first date is.</p>Your in town visiting but you both don't want to do the <strong>boring</strong> touristy things.
+                        <p>We’ve all been there before: you and your partner have date night plans, but you haven’t figured out where to go or what to do.</p><p>They said yes but you have no idea what their ideal first date is.</p>You’re visiting a new city, but neither of you want to do the same old <strong>boring</strong>, touristy things.
                 </div>
             </div>
         </div>
-
+        
         <div class="clear"></div>
-
-
-        <div class="missionblock">
-
-
+        
+        <!-- Brief mission statement -->
+        <div class="missionblock"> 
+            <img src="images/coffeefortwo.png">
             <p id="mission">Our mission is to bring you a simpler and more relatable experience when planning out your next date.</p>
             <p>Whether you two are going on your first date or your hundreth date, we've got you covered.</p>
-            <img src="images/coffeefortwo.png">
-
-        </div>
-
-        <div class="gridwrapper">
+                
+        </div> 
+        
+        <!-- Grid include FEATURES included in the website -->
+        <div class="gridwrapper"> 
             <div class="gridtext">
+                <img src="images/location.png">
                 <p><strong> Reviews + Recommendations</strong></p>
                 <p>Get an inside scoop on where others have enjoyed dates and recieve personalized recommendations on where you should go</p>
-                <img src="images/location.png">
+                
             </div>
-
+    
             <div class="gridtext">
+                <img src="images/home.png">
                 <p><strong>Lazy Sunday</strong></p>
                 <p>Staying in? For the times when you simply don't want to be outside, plan out a date right in your home! </p>
-                <img src="images/home.png">
+                
             </div>
-
+            
             <div class="gridtext">
+                <img src="images/benchgraphic.png">
                 <p><strong>First Glimpse</strong></p>
                 <p>A collection of stories from people like you on where they went on their first date and what made it memorable</p>
-                <img src="images/benchgraphic.png">
+                
             </div>
         </div>
-
-        <p class="bigtext">That next special experience between you two should be right at your fingertips.</p>
+        
+        <!-- Big Text with 100% width before spark background image -->
+        <div>
+            <p class="bigtext">That next special experience between you two should be right at your fingertips.</p> 
+        </div>
+        
+        <!-- Sparks background image -->
         <div class="background sparkblock"></div>
-
-
-
+        
+        <!-- Last section of the page where users will get the chance to sign up for our updates -->
         <div class="signupblock">
-
-            <div class="feature=input">
+            
+            <div class="feature-input">
+                <img src="images/glimpselogo3.png">
                 <p><strong>Coming Soon!</strong> Be the first to know about our launch</p>
 
-                <input type="text" placeholder="First Name" id='first-name' class="enterinfo">
+                <input type="text" placeholder="First Name" class="enterinfo">
                 <p></p>
-                <input type="text" placeholder="Last Name" id= 'last-name' class="enterinfo">
+                <input type="text" placeholder="Last Name" class="enterinfo">
                 <p></p>
 
-                <input type="text" class="enterinfo error" name="EMAIL" id="subscribe-email" placeholder="Enter your email address" spellcheck="false">
+                <input type="text" class="enterinfo error" name="EMAIL" id="subscribe-email" placeholder="Email Address" spellcheck="false"> 
                 <p></p>
-                <button type="submit" id="signup-button" class="signup-button">Sign Up</button>
+                <button type="submit" id="signup-button" class="signup-button">Sign Up</button> 
                 <label for="subscribe-email" class="subscribe-message error" style="">
                 <i class="fa fa-warning"></i>
                 <p></p>
                 <span class="message-content"></span>
                 </label>
             </div>
-
+            
         </div>
-
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+        
         <script  src="js/subscribe.js"> </script>
 
     </body>
