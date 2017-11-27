@@ -36,14 +36,14 @@ h1{
 
 .topblock{
     /* first background image at top of page */
-    background-image: url(images/marvelappbench.png);
+    background-image: url(../images/marvelappbench.png);
     min-height: 80%;
     z-index: 3;
 }
 
 .sparkblock{
     /* background image at bottom of page "sparks" */
-    background-image: url(images/marvelapplights.png);
+    background-image: url(../images/marvelapplights.png);
     min-height: 50%;
     z-index: 1;
 }
