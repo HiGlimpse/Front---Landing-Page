@@ -1,3 +1,7 @@
+/*
+Glimpse colors: #274653 - royalblue , #B8977E - beige
+*/
+
 body{
     font-family: lato;
     height:100%;
@@ -7,10 +11,11 @@ body{
 }
 
 h1{
+    /* top bar with fixed positioning*/
     text-align: center;
     color:#B8977E;
     font-family: comfortaa;
-    background-color: antiquewhite;
+    background-color: #274653;
     margin:0;
     position:fixed;
     width:100%;
@@ -19,6 +24,7 @@ h1{
 }
 
 .background{
+    /* sets images as background */
     text-align: center;
     position:relative;
     background-position: center;
@@ -27,37 +33,42 @@ h1{
     background-attachment: fixed;
     /*fixed makes the image parallax, scroll changes it to normal*/
 }
+
 .topblock{
-    background-image: url(../images/marvelappbench.png);
+    /* first background image at top of page */
+    background-image: url(images/marvelappbench.png);
     min-height: 80%;
     z-index: 3;
 }
 
 .sparkblock{
-    background-image: url(../images/marvelapplights.png);
+    /* background image at bottom of page "sparks" */
+    background-image: url(images/marvelapplights.png);
     min-height: 50%;
     z-index: 1;
 }
 
+/* styling for "glimpse" that appears on top of first background image 
+
 .blocktext{
     position:absolute;
-    top:50%;
+    top:10%;
     width:100%;
-    color:#000;
     font-size: 300%;
-    letter-spacing: 2px;
-    font-family: comfortaa;
 }
 
 .blockborder{
     display: inline-block;
-    background-color: antiquewhite;
+    background-color: #274653;
     color:#B8977E;
-    padding:5px;
-    border-radius: 10px;
+    border-radius: 15px;
+    height:10%;
+    padding:1%;
 }
+*/
 
 span {
+    /* adds "blinker" to the right of text. Shows continous typing*/
   border-right: .05em solid;
   animation: caret 1s steps(1) infinite;
 }
@@ -68,7 +79,8 @@ span {
   }
 }
 
-.clear{
+.clear{ 
+    /*restores page structure*/
     clear:both;
 }
 
@@ -77,9 +89,23 @@ span {
     padding:2%;
 }
 
+/* begins INTRO section with image and text next to each other*/
+
 .intro{
     background-color: #F1F1F1;
     height:50%;
+}
+
+@media (max-height:700px) {
+    .intro{
+        height:70%;
+    }
+}
+
+@media (max-height:500px) {
+    .intro{
+        height:100%;
+    }
 }
 
 .intro img{
@@ -103,22 +129,32 @@ span {
     padding: 5%;
 }
 
+@media (max-width:500px) {
+    .textcell{
+        font-size:100%;
+    }
+}
+
+/* ends INTRO section */
+
 .missionblock{
     padding:4%;
     font-size: 120%;
 }
 
 .missionblock img{
-    height: 10%;
+    height: 100px;
 }
+
+/* begins FEATURES section which is separated into three columns and later changed to a single column based on device width */
 
 .gridwrapper{
     width:100%;
     display: grid;
-    height:50%;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #F1F1F1;
     padding: 0;
+    grid-auto-rows: auto;
 }
 
 .gridtext{
@@ -126,10 +162,35 @@ span {
     padding:5%;
 }
 
+.gridtext strong{
+    /* titles of each feature are set to royal blue */
+    color: #274653;
+}
+
 .gridtext img{
     max-width: 100%;
-    height: 150px;
+    height: 120px;
 }
+
+@media (max-width:900px) {
+    .gridtext img{
+        height:100px;
+    }
+    .gridtext{
+        font-size:100%;
+    }
+}
+
+@media (max-width:700px) {
+    .gridwrapper{
+        height:auto;
+        grid-template-columns: 1fr;
+    }
+    .gridtext{
+        padding:2%;
+    }
+}
+/* ends FEATURES section */
 
 .enterinfo {
     font-family: 'Open Sans', sans-serif;
@@ -141,7 +202,7 @@ span {
     width: 30%;
     background-color: antiquewhite;
     border: solid 1px rgba(255, 255, 255, 0.17);
-    color: #B8977E;
+    color: #274653;
     font-size: 13px;
     font-weight: 400;
     border-radius: 5px;
@@ -152,7 +213,7 @@ span {
 .signup-button {
     width: 10%;
     height: 55px;
-    background-color: #131313;
+    background-color: #274653;
     border: none;
     font-size: 14px;
     border-radius: 5px;
@@ -165,11 +226,25 @@ span {
     box-sizing: border-box;
 }
 
+@media (max-width:500px) {
+    .enterinfo{
+        width: 50%;
+    }
+    .signup-button{
+        width:20%;
+    }
+}
+
 .signupblock{
     padding: 3%;
     background-color: #F1F1F1;
+    color:#274653;
 }
 
 .signupblock p{
     font-size: 150%;
+}
+
+.feature-input img{
+    height:100px;
 }
